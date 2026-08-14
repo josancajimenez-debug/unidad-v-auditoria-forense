@@ -38,6 +38,7 @@ test("la unidad conserva los ocho subtemas oficiales", () => {
   ];
   headings.forEach((heading) => assert.ok(html.includes(heading), heading));
   assert.ok(html.includes("José Andrés Campos Jiménez"));
+  assert.doesNotMatch(html, /Diplomado en Auditoría Forense/i);
 });
 
 test("existen ocho casos y ocho preguntas", () => {

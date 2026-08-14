@@ -1,7 +1,6 @@
 # Unidad V · Rol de la Persona Auditora Forense
 
 **ACC.CONTADORES — Contadores Privados Incorporados**
-Diplomado en Auditoría Forense
 Profesor: **José Andrés Campos Jiménez** · Miramar, Montes de Oro, Puntarenas, Costa Rica
 
 Material didáctico interactivo, autocontenido y estático. Un solo archivo
