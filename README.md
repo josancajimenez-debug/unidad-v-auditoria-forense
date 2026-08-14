@@ -14,14 +14,14 @@ proceso de compilación.
 
 | N.º | Subtema | Fuentes principales |
 |-----|---------|---------------------|
-| 5.1 | Ética y responsabilidad social | Márquez Arcila (2019); AIC (2024); Ramírez Casco et al. (2024) |
-| 5.2 | Código de ética del auditor forense | Márquez Arcila (2019); Ramírez Casco et al. (2024) |
-| 5.3 | Perfil profesional y competencias | Márquez Arcila (2019); Ramírez Casco et al. (2024) |
-| 5.4 | Funciones, campo de acción y organización | AIC (2024); Márquez Arcila (2019); Ramírez Casco et al. (2024) |
-| 5.5 | Independencia, objetividad y escepticismo | Ramírez Casco et al. (2024); Márquez Arcila (2019) |
-| 5.6 | La persona auditora como perito y testigo experto | Arias González et al. (2019); AIC (2024); Márquez Arcila (2019) |
-| 5.7 | Desarrollo profesional continuo y asociaciones | Márquez Arcila (2019) |
-| 5.8 | Tecnología, datos e inteligencia artificial | Naqvi (2020); Márquez Arcila (2019); Ramírez Casco et al. (2024) |
+| 5.1 | Ética y responsabilidad social en la auditoría forense | IESBA (2018); AIC (2024) |
+| 5.2 | Código de ética del auditor forense | IESBA (2018); Márquez Arcila (2019) |
+| 5.3 | Responsabilidad social del auditor forense | Ramírez Casco et al. (2024); AIC (2024) |
+| 5.4 | Análisis de casos de ética y responsabilidad social | IESBA (2018); Ramírez Casco et al. (2024) |
+| 5.5 | Presentación de resultados y testimonio | AIC (2024); Márquez Arcila (2019) |
+| 5.6 | Preparación y presentación de resultados | AIC (2024); Arias González et al. (2019) |
+| 5.7 | El testimonio del auditor forense | Márquez Arcila (2019); Arias González et al. (2019) |
+| 5.8 | Presentación de denuncias | AIC (2024); Arias González et al. (2019) |
 
 ---
 
@@ -29,11 +29,11 @@ proceso de compilación.
 
 - **Navegación por pestañas** (una por subtema) con botones Anterior y Siguiente,
   y recorrido con las flechas del teclado, Inicio y Fin.
-- **Nueve casos de estudio desplegables**, cada uno con la estructura
+- **Ocho casos de estudio desplegables**, uno por subtema, con la estructura
   *hechos → dilema → lección*, con montos en colones costarricenses.
 - **Lista de verificación de doce puntos** sobre el encuadre ético del encargo,
   con barra de progreso y veredicto según el avance (subtema 5.5).
-- **Cuestionario de autoevaluación** de ocho preguntas, una por subtema, con
+- **Cuestionario de autoevaluación** de ocho preguntas alineadas con el programa, con
   retroalimentación inmediata razonada y puntaje final.
 - **Citas enlazadas**: cada `(Autor, año)` del texto conduce a su entrada en la
   lista de referencias y la resalta.
