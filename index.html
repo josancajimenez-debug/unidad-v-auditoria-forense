@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Unidad V del Diplomado en Auditoría Forense de ACC.CONTADORES: ética, responsabilidad social, presentación de resultados, testimonio y denuncias. Profesor: José Andrés Campos Jiménez.">
 <meta name="author" content="CPI José Andrés Campos Jiménez — ACC.CONTADORES">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>Unidad V · Rol de la Persona Auditora Forense — ACC.CONTADORES</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,27 +154,12 @@ ul.lista li{margin-bottom:7px;font-size:15px;color:var(--tinta-suave);max-width:
 .bloque.hechos b{color:var(--azul)} .bloque.dilema b{color:var(--aviso)} .bloque.leccion b{color:var(--ok)}
 .bloque p{font-size:14.5px;color:var(--tinta-suave);margin:0}
 
-/* ===================== LISTA DE VERIFICACIÓN ===================== */
-.check{background:var(--tarjeta);border:1px solid var(--linea);border-radius:var(--radio);padding:18px;box-shadow:var(--sombra)}
-.barra-wrap{margin:6px 0 16px}
-.barra-txt{font-family:var(--mono);font-size:12.5px;color:var(--tinta-suave);margin-bottom:6px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-.barra{height:9px;background:var(--papel-2);border:1px solid var(--linea);border-radius:99px;overflow:hidden}
-.barra-fill{height:100%;width:0;background:linear-gradient(90deg,var(--oro-claro),var(--oro));transition:width .4s ease}
-.check-item{display:flex;gap:11px;align-items:flex-start;padding:9px 0;border-bottom:1px dashed var(--linea)}
-.check-item:last-child{border-bottom:none}
-.check-item input{width:19px;height:19px;margin-top:2px;flex:0 0 auto;accent-color:var(--azul);cursor:pointer}
-.check-item label{font-size:14.5px;color:var(--tinta-suave);cursor:pointer}
-.check-item .fuente{display:block;font-size:12px;color:var(--gris);margin-top:2px}
-.check-item.listo label{color:var(--ok)}
-.veredicto{margin-top:14px;padding:12px 14px;border-radius:8px;font-size:14.5px;display:none}
-.veredicto.ver{display:block}
-.veredicto.ok{background:var(--ok-bg);border:1px solid var(--ok);color:#12452e}
-.veredicto.parcial{background:var(--aviso-bg);border:1px solid var(--aviso);color:#6b4600}
-
 /* ===================== CUESTIONARIO ===================== */
 .quiz{background:var(--tarjeta);border:1px solid var(--linea);border-radius:var(--radio);padding:20px;box-shadow:var(--sombra)}
 .q-meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--gris);margin-bottom:8px}
 .q-texto{font-family:var(--serif);font-size:18.5px;color:var(--azul-900);margin:6px 0 16px}
+.q-paso{margin-top:20px;padding-top:16px}
+.q-ayuda{font-size:13px;color:var(--gris)}
 .opciones{display:flex;flex-direction:column;gap:9px}
 .op{display:flex;gap:11px;align-items:flex-start;text-align:left;padding:12px 14px;border:1px solid var(--linea-fuerte);
   border-radius:9px;background:var(--papel);color:var(--tinta);cursor:pointer;font-family:var(--sans);font-size:15px;
@@ -189,6 +176,8 @@ ul.lista li{margin-bottom:7px;font-size:15px;color:var(--tinta-suave);max-width:
 .retro .tag{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
 .marcador{text-align:center;padding:26px 16px}
 .marcador .aro{font-family:var(--serif);font-size:46px;color:var(--azul);line-height:1}
+.marcador .porcentaje{font-size:17px;color:var(--tinta-suave);margin-top:10px}
+.marcador .juicio{font-size:15px;color:var(--tinta-suave);max-width:52ch;margin:0 auto 18px}
 
 /* ===================== BOTONES, REFERENCIAS Y PIE ===================== */
 .btn{font-family:var(--sans);font-size:14px;font-weight:600;padding:10px 18px;border-radius:8px;cursor:pointer;
@@ -259,40 +248,6 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
   <p>En contabilidad, esta exigencia se aplica al reconstruir auxiliares, conciliar cuentas, cuantificar perjuicios o analizar asientos inusuales. Una cifra no se presenta como hallazgo solo porque parece sospechosa: debe vincularse con documentación competente, relevante y suficiente, obtenida lícitamente. La responsabilidad ética protege tanto a la entidad afectada como los derechos de las personas investigadas <button type="button" class="ref" data-ref="aic">(AIC, 2024)</button>.</p>
   <div class="nota oro"><b>Aplicación contable.</b> Si aparecen pagos duplicados por ₡12.400.000, la persona auditora debe conciliar libro mayor, facturas, órdenes de compra, aprobaciones y estados bancarios; documentar explicaciones alternativas; y evitar llamar “fraude” al resultado antes de que la autoridad competente valore la intención y la responsabilidad.</div>
 
-  <div hidden>
-
-  <h3>La ética como eje, no como adorno</h3>
-  <p>Las organizaciones dedicadas a prevenir, detectar y disuadir el fraude coinciden en situar la ética como eje central de esa tarea. La existencia de un código que fije la postura de la alta dirección frente a la ilegalidad no es un gesto de imagen: constituye un requisito indispensable de todo programa de prevención y disuasión del fraude <button type="button" class="ref" data-ref="marquez">(Márquez Arcila, 2019)</button>.</p>
-  <p>La razón es de orden práctico. El fraude no solo sustrae activos valiosos; produce además un daño reputacional que la organización difícilmente repara. Quien audita forensemente trabaja, por tanto, sobre dos patrimonios: el contable y el reputacional.</p>
-
-  <h3>Responsabilidad social: qué protege la persona auditora forense</h3>
-  <p>La Asociación Interamericana de Contabilidad describe la función forense mediante tres verbos encadenados: <b>descubre</b>, <b>divulga</b> y <b>atesta</b> sobre hechos que afectan el patrimonio de las personas y el orden económico nacional <button type="button" class="ref" data-ref="aic">(AIC, 2024)</button>. Esa formulación es útil porque desplaza el centro de gravedad: el destinatario último del trabajo no es quien paga los honorarios, sino el orden económico que resulta lesionado por el fraude.</p>
-  <p>En la misma línea, la literatura describe a esta figura como profesional llamado a combatir la corrupción financiera pública y privada <button type="button" class="ref" data-ref="marquez">(Márquez Arcila, 2019)</button>, y subraya que su labor se encamina a suministrar pruebas suficientes para el esclarecimiento de un delito <button type="button" class="ref" data-ref="ramirez">(Ramírez Casco et al., 2024)</button>.</p>
-
-  <blockquote class="cita">
-    <p>El auditor forense es «un profesional valioso y altamente necesario» en la sociedad actual.</p>
-    <footer>Márquez Arcila (2019, p. 168)</footer>
-  </blockquote>
-
-  <h3>La racionalización: por qué la ética organizacional importa</h3>
-  <p>El tercer vértice del triángulo del fraude explica la relevancia práctica de un marco ético. Según estudios de la Asociación de Examinadores de Fraude Certificados, un 10 % de las personas actúa de forma completamente ética, otro 10 % es capaz de defraudar y el 80 % restante actúa según la situación en que se encuentre <button type="button" class="ref" data-ref="marquez">(Márquez Arcila, 2019)</button>.</p>
-  <p>Ese 80 % es el terreno donde la ética organizacional decide el resultado. Quien racionaliza ajusta su conducta a su propia conciencia mediante justificaciones como «he trabajado mucho sin recompensa» o «será un préstamo temporal». Una cultura ética explícita, con ejemplo visible de la alta dirección, reduce el espacio para esas justificaciones.</p>
-
-  <div class="rejilla r3">
-    <div class="tarjeta"><span class="etiqueta">Presión</span><h4>Incentivo</h4><p>Necesidad financiera no compartible o metas de desempeño inalcanzables.</p></div>
-    <div class="tarjeta"><span class="etiqueta">Oportunidad</span><h4>Control débil</h4><p>Fallas de control interno o una posición jerárquica que permite eludirlos.</p></div>
-    <div class="tarjeta"><span class="etiqueta">Racionalización</span><h4>Justificación</h4><p>El relato con el que la persona concilia el acto con sus propios valores.</p></div>
-  </div>
-
-  <h3>Aplicación contable</h3>
-  <p>La responsabilidad social se concreta en decisiones de registro y revelación. Un ejemplo: una cooperativa de Puntarenas detecta faltantes por <b class="num">₡18.750.000</b> acumulados en catorce meses en la caja chica de una sucursal. La decisión contable —reconocer la pérdida, revelar la contingencia, o ambas— no es neutra: determina qué sabrán las personas asociadas sobre el estado real de su patrimonio.</p>
-
-  <div class="nota oro">
-    <p><b>Distinga.</b> El deber ético de quien audita no se agota en no participar del fraude. Incluye no facilitarlo por omisión: no diseñar un alcance a la medida de lo que el contratante desea encontrar, y no callar lo que la evidencia sostiene.</p>
-  </div>
-
-  <h3>Caso de estudio</h3>
-  </div>
   <div id="casos-51"></div>
 
   <div class="paso"><button type="button" class="btn claro" data-ir="prev">← Anterior</button><button type="button" class="btn" data-ir="next">5.2 Código de ética →</button></div>
@@ -309,45 +264,6 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
   <p>Márquez Arcila resume el código profesional del examinador de fraude en siete compromisos: profesionalismo y diligencia; ausencia de conducta ilegal, antiética y conflictos; integridad y competencia; evidencia razonable para opinar; confidencialidad; revelación de asuntos materiales; y mejora continua <button type="button" class="ref" data-ref="marquez">(Márquez Arcila, 2019)</button>.</p>
   <div class="rejilla r3"><div class="tarjeta"><h4>Integridad</h4><p>No alterar, omitir ni presentar selectivamente la evidencia.</p></div><div class="tarjeta"><h4>Objetividad</h4><p>Evaluar hipótesis favorables y desfavorables con el mismo rigor.</p></div><div class="tarjeta"><h4>Confidencialidad</h4><p>Compartir información solo con autorización o deber legal aplicable.</p></div></div>
 
-  <div hidden>
-
-  <h3>De hecho y en apariencia</h3>
-  <p>El primer rasgo que la literatura exige del perfil forense es presentar los más altos estándares de ética e integridad <b>de hecho y en apariencia</b> <button type="button" class="ref" data-ref="marquez">(Márquez Arcila, 2019)</button>. La doble exigencia no es redundante. Un dictamen puede ser materialmente impecable y aun así perder valor probatorio si las circunstancias permiten dudar razonablemente de la imparcialidad de quien lo firma.</p>
-
-  <div class="tabla-wrap">
-    <table>
-      <caption class="sr-only">Dimensiones de la autonomía</caption>
-      <thead><tr><th>Dimensión</th><th>En qué consiste</th><th>Cómo se pierde</th></tr></thead>
-      <tbody>
-        <tr><td><b>Autonomía psicológica</b></td><td>Capacidad de emitir una opinión libre de influencias que comprometan el juicio profesional, actuando con integridad, objetividad y escepticismo.</td><td>Vínculos económicos, presión jerárquica o compromiso previo con una conclusión.</td></tr>
-        <tr><td><b>Autonomía aparente</b></td><td>Ausencia de hechos que llevarían a un tercero informado y juicioso a concluir que la objetividad quedó comprometida.</td><td>Relaciones pasadas, intereses cruzados o beneficios indirectos, aunque no hayan influido de hecho.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p style="font-size:13px;color:var(--gris)">Elaboración propia a partir de <button type="button" class="ref" data-ref="ramirez">Ramírez Casco et al. (2024, p. 29)</button>.</p>
-
-  <h3>Códigos aplicables al ejercicio forense</h3>
-  <p>Quien ejerce la auditoría forense responde de forma simultánea ante varios marcos deontológicos, y ninguno desplaza a los demás:</p>
-  <ul class="lista">
-    <li><b>El código del colegio profesional</b> que habilita el ejercicio de la contaduría en la jurisdicción donde se emite el informe.</li>
-    <li><b>El código de la certificación especializada.</b> La ACFE exige que las personas certificadas como examinadoras de fraude se alineen a un código de ética y conducta profesional, y establece niveles de competencia sostenidos mediante educación continua <button type="button" class="ref" data-ref="marquez">(Márquez Arcila, 2019)</button>.</li>
-    <li><b>El código interno de la organización</b> cuando el trabajo se realiza desde un departamento propio de auditoría forense.</li>
-    <li><b>Las reglas procesales</b> del foro ante el cual se rendirá el dictamen, que imponen deberes de imparcialidad y causales de impedimento propias.</li>
-  </ul>
-
-  <div class="nota">
-    <p><b>Consecuencia práctica.</b> Ante un conflicto entre marcos, el criterio no es escoger el más benigno sino cumplir el más exigente. La deontología profesional opera como piso, nunca como techo.</p>
-  </div>
-
-  <h3>El código dentro de la organización auditada</h3>
-  <p>El mismo instrumento que rige a la persona auditora es, además, objeto de su evaluación. Entre los indicadores de madurez antifraude de una organización figura que exista un código de ética efectivamente implementado, que el personal conozca las conductas esperadas, que la alta dirección dé ejemplo de su cumplimiento y que una persona de alta jerarquía vigile su observancia <button type="button" class="ref" data-ref="marquez">(Márquez Arcila, 2019)</button>.</p>
-  <p>De ahí que la revisión del código de ética del cliente sea un procedimiento sustantivo del encargo forense, y no un trámite documental: su ausencia o su carácter meramente decorativo constituye por sí misma una condición que eleva el riesgo de fraude.</p>
-
-  <h3>Aplicación contable</h3>
-  <p>Suponga una propuesta de servicios por <b class="num">₡4.200.000</b> para investigar presuntas irregularidades en compras. El contratante sugiere que el alcance excluya las adquisiciones autorizadas por la gerencia general. Aceptar esa limitación no es una decisión comercial: convierte el encargo en un ejercicio incapaz de responder a la pregunta que lo motiva, y compromete de antemano la autonomía del juicio.</p>
-
-  <h3>Caso de estudio</h3>
-  </div>
   <div id="casos-52"></div>
 
   <div class="paso"><button type="button" class="btn claro" data-ir="prev">← 5.1 Ética</button><button type="button" class="btn" data-ir="next">5.3 Responsabilidad social →</button></div>
@@ -364,62 +280,6 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
   <p>Esta responsabilidad exige reducir daños evitables: proteger al denunciante, no exponer datos personales innecesarios, comunicar oportunamente riesgos que continúan activos y formular recomendaciones que fortalezcan controles. También exige no prometer resultados judiciales ni sustituir a la fiscalía o al tribunal.</p>
   <div class="nota oro"><b>Aplicación contable.</b> Ante una nómina con personas inexistentes, no basta cuantificar la pérdida. El análisis social identifica quién autorizó altas, cómo falló la segregación de funciones, qué datos deben protegerse y qué controles impedirán que el daño continúe.</div>
 
-  <div hidden>
-
-  <h3>Cuatro capas del perfil</h3>
-  <p>La formación forense combina una base disciplinar amplia con especialización acreditada. Márquez Arcila (2019) propone un perfil articulado en formación académica, certificaciones, educación continua y conocimiento de disciplinas de apoyo.</p>
-
-  <div class="rejilla r2">
-    <div class="tarjeta"><span class="etiqueta">Capa 1</span><h4>Formación académica</h4><p>Licenciaturas en contabilidad y finanzas, derecho, criminalística, tecnología de la información, actuaría, ingeniería civil o psicología; posgrados en auditoría, administración o derecho.</p></div>
-    <div class="tarjeta"><span class="etiqueta">Capa 2</span><h4>Certificaciones</h4><p>CFE (examinador de fraude), CIA y CGAP (auditoría interna y gubernamental), CISA (sistemas de información), CRMA (gestión de riesgos), CIRA (insolvencias) y la certificación del colegio profesional.</p></div>
-    <div class="tarjeta"><span class="etiqueta">Capa 3</span><h4>Educación continua</h4><p>Diplomados en auditoría forense, cursos de entrevista forense, técnicas computarizadas de investigación y participación en convenciones y seminarios especializados.</p></div>
-    <div class="tarjeta"><span class="etiqueta">Capa 4</span><h4>Disciplinas de apoyo</h4><p>Entrevista forense, dactiloscopia, documentoscopia, análisis de datos, técnicas de auditoría asistidas por computadora (TAAC) y la norma ISO 37001 de gestión antisoborno.</p></div>
-  </div>
-
-  <div class="nota">
-    <p><b>El perfil se ajusta al caso.</b> Un fraude bursátil exige personas expertas en esa materia; uno que involucre normas internacionales o ambientales requiere quien sepa obtener evidencia suficiente y confiable en ese campo específico <button type="button" class="ref" data-ref="marquez">(Márquez Arcila, 2019)</button>. No existe un perfil único que sirva para todo encargo.</p>
-  </div>
-
-  <h3>Características personales exigidas</h3>
-  <div class="tabla-wrap">
-    <table>
-      <thead><tr><th>Atributo</th><th>Qué significa en el encargo</th></tr></thead>
-      <tbody>
-        <tr><td><b>Integridad y ética</b></td><td>Los más altos estándares, de hecho y en apariencia.</td></tr>
-        <tr><td><b>Objetividad e independencia</b></td><td>Mentalidad que permite separar los hechos relevantes de los irrelevantes.</td></tr>
-        <tr><td><b>Mentalidad investigadora</b></td><td>El trabajo no se restringe a la materialidad ni al muestreo: se rige por los procesos judiciales previstos en la ley. Exige creatividad, curiosidad, perseverancia y confidencialidad.</td></tr>
-        <tr><td><b>Autocontrol</b></td><td>Manejo de las emociones bajo altos niveles de presión.</td></tr>
-        <tr><td><b>Comunicación y persuasión</b></td><td>Obtener información de manera discreta, sin alertar a las personas involucradas.</td></tr>
-        <tr><td><b>Mediación y negociación</b></td><td>Alcanzar acuerdos de colaboración con las partes durante la investigación.</td></tr>
-        <tr><td><b>Habilidades analíticas</b></td><td>Razonamiento analítico y uso de técnicas manuales y computarizadas para construir un expediente persuasivo.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p style="font-size:13px;color:var(--gris)">Elaboración propia a partir de <button type="button" class="ref" data-ref="marquez">Márquez Arcila (2019, p. 170)</button>.</p>
-
-  <h3>Una segunda mirada al perfil</h3>
-  <p>Ramírez Casco et al. (2024) parten de la persona contadora pública titulada y añaden formación en investigación legal y jurídica, para comprender la importancia de la recolección de pruebas y su incidencia en el informe. Su descripción del perfil incorpora rasgos que rara vez aparecen en los manuales de auditoría financiera: serenidad, fortaleza de carácter, capacidad de trabajo bajo presión, agilidad mental y adaptabilidad.</p>
-  <div class="nota oro">
-    <p><b>Advertencia poco frecuente.</b> Estas autoras señalan que la auditoría forense produce un fuerte desgaste físico y mental, por la presión, los riesgos, la dificultad de obtener evidencia y el tiempo invertido <button type="button" class="ref" data-ref="ramirez">(Ramírez Casco et al., 2024, p. 29)</button>. El cuidado personal forma parte de la competencia profesional, no es un asunto ajeno a ella.</p>
-  </div>
-
-  <h3>Ponderación del perfil</h3>
-  <p>Para decisiones de contratación o asignación, Márquez Arcila (2019) propone una métrica con cuatro criterios ponderados. La prioridad relativa debe ajustarse al puesto concreto:</p>
-  <div class="tabla-wrap">
-    <table>
-      <thead><tr><th>Criterio</th><th class="num">Ponderación</th><th>Se acredita con</th></tr></thead>
-      <tbody>
-        <tr><td><b>Perfil profesional</b></td><td class="num">50 %</td><td>Títulos, posgrados, certificaciones, idiomas, asociaciones, actividad académica y educación continua.</td></tr>
-        <tr><td><b>Conocimientos</b></td><td class="num">20 %</td><td>Evaluación estandarizada en auditoría forense, contabilidad, leyes, criminalística, TAAC, entrevista y peritaje.</td></tr>
-        <tr><td><b>Habilidades</b></td><td class="num">15 %</td><td>Análisis, síntesis, sistematización y evaluación oral y escrita, mediante simulación o entrevista.</td></tr>
-        <tr><td><b>Características personales</b></td><td class="num">15 %</td><td>Integridad (revisión de antecedentes), objetividad y autocontrol (pruebas psicométricas).</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p style="font-size:13px;color:var(--gris)">Adaptado de <button type="button" class="ref" data-ref="marquez">Márquez Arcila (2019, p. 171)</button>.</p>
-
-  <h3>Caso de estudio</h3>
-  </div>
   <div id="casos-53"></div>
 
   <div class="paso"><button type="button" class="btn claro" data-ir="prev">← 5.2 Código de ética</button><button type="button" class="btn" data-ir="next">5.4 Análisis de casos →</button></div>
@@ -435,49 +295,6 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
   <div class="rejilla r3"><div class="tarjeta"><span class="etiqueta">1</span><h4>Hechos y partes</h4><p>Separar hechos comprobados, inferencias y alegaciones; identificar quién puede resultar afectado.</p></div><div class="tarjeta"><span class="etiqueta">2</span><h4>Principios y amenazas</h4><p>Evaluar integridad, objetividad, competencia, confidencialidad e interés público.</p></div><div class="tarjeta"><span class="etiqueta">3</span><h4>Acción documentada</h4><p>Comparar alternativas, consultar cuando proceda, aplicar salvaguardas y dejar trazabilidad.</p></div></div>
   <p>El criterio de un tercero razonable e informado ayuda a evaluar la independencia aparente. La decisión no debe depender solo de que la persona auditora “se sienta imparcial”, sino de cómo se valorarían objetivamente las relaciones y salvaguardas conocidas <button type="button" class="ref" data-ref="ramirez">(Ramírez Casco et al., 2024)</button>.</p>
 
-  <div hidden>
-
-  <h3>Las tres funciones esenciales</h3>
-  <div class="rejilla r3">
-    <div class="tarjeta"><span class="etiqueta">Función 1</span><h4>Descubre</h4><p>Al planificar, identifica técnicas y estructura procedimientos para recopilar evidencia de los hechos, con capacidad de describir de manera fáctica el objeto investigado.</p></div>
-    <div class="tarjeta"><span class="etiqueta">Función 2</span><h4>Divulga</h4><p>Comunica el resultado a quien corresponde, en la forma y con el alcance que el encargo y la ley determinan.</p></div>
-    <div class="tarjeta"><span class="etiqueta">Función 3</span><h4>Atesta</h4><p>Da fe sobre hechos que afectan el patrimonio de las personas y el orden económico nacional.</p></div>
-  </div>
-  <p style="font-size:13px;color:var(--gris)">Adaptado de <button type="button" class="ref" data-ref="aic">AIC (2024)</button>.</p>
-  <p>La secuencia importa. Descubrir sin capacidad de atestar produce sospechas sin valor probatorio; atestar sin haber descubierto con procedimiento riguroso produce afirmaciones que no resisten el contradictorio.</p>
-
-  <h3>Campo de acción</h3>
-  <p>La auditoría forense la ejerce toda persona auditora que, acreditando los conocimientos y habilidades necesarios, deba prevenir y detectar fraudes financieros: auditoría externa, interna, gubernamental, tributaria e informática <button type="button" class="ref" data-ref="ramirez">(Ramírez Casco et al., 2024)</button>. Los ámbitos donde se despliega el trabajo incluyen:</p>
-  <ul class="lista">
-    <li>Contralorías y órganos estatales de control.</li>
-    <li>Firmas privadas de auditoría y consultoría.</li>
-    <li>Unidades de auditoría interna de entidades públicas y privadas.</li>
-    <li>Organizaciones dedicadas al combate de la corrupción, el narcotráfico y el terrorismo.</li>
-    <li>Unidades de inteligencia fiscal y financiera.</li>
-  </ul>
-
-  <h3>El departamento de auditoría forense y su medición</h3>
-  <p>Cuando la función se institucionaliza en un departamento propio, aparece un problema de gestión: cómo medir su efectividad. Márquez Arcila (2019) reporta un hallazgo con consecuencias directas sobre el diseño de esas métricas.</p>
-  <div class="tabla-wrap">
-    <table>
-      <thead><tr><th>Tipo de métrica</th><th>Ejemplo</th><th>Relación con la recuperación</th></tr></thead>
-      <tbody>
-        <tr><td><b>De calidad del resultado</b></td><td>Porcentaje de casos que derivaron en acción legal; monto efectivamente recuperado.</td><td>Mayor porcentaje promedio de pérdidas recuperadas.</td></tr>
-        <tr><td><b>De cantidad</b></td><td>Número de casos cerrados en el periodo.</td><td>Menor recuperación que las métricas de calidad.</td></tr>
-        <tr><td><b>Sin métricas</b></td><td>El 40 % de las organizaciones encuestadas no reportó ninguna.</td><td>El porcentaje más bajo de recuperación.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p style="font-size:13px;color:var(--gris)">Elaboración propia a partir de <button type="button" class="ref" data-ref="marquez">Márquez Arcila (2019, p. 168)</button>.</p>
-  <div class="nota oro">
-    <p><b>Lectura para la gestión.</b> Medir por cantidad de casos cerrados incentiva cerrar rápido, no cerrar bien. La evidencia disponible sugiere que las métricas centradas en la calidad del resultado se asocian con mayor recuperación real.</p>
-  </div>
-
-  <h3>Aplicación contable</h3>
-  <p>Una unidad de auditoría interna que cierra 40 expedientes al año con una recuperación agregada de <b class="num">₡9.000.000</b> exhibe peor desempeño que otra que cierra 12 con recuperación de <b class="num">₡140.000.000</b> y ocho casos remitidos a la vía judicial. El indicador que se elija determina cuál de las dos parecerá exitosa ante la dirección.</p>
-
-  <h3>Caso de estudio</h3>
-  </div>
   <div id="casos-54"></div>
 
   <div class="paso"><button type="button" class="btn claro" data-ir="prev">← 5.3 Responsabilidad social</button><button type="button" class="btn" data-ir="next">5.5 Resultados y testimonio →</button></div>
@@ -494,35 +311,6 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
   <p>La persona auditora distingue entre informe preventivo, informe técnico oficial y dictamen especial forense. La denominación y el valor procesal dependen del tipo de encargo y de la legislación aplicable; por eso la coordinación con asesoría jurídica es necesaria, sin delegar el juicio contable <button type="button" class="ref" data-ref="aic">(AIC, 2024)</button>.</p>
   <div class="nota oro"><b>Puente contable-probatorio.</b> “La cuenta por cobrar fue sobrestimada” es una conclusión insuficiente. Debe explicarse el saldo, los documentos examinados, las confirmaciones, los cobros posteriores, el criterio de cálculo y las limitaciones encontradas.</div>
 
-  <div hidden>
-
-  <div class="rejilla r3">
-    <div class="tarjeta"><span class="etiqueta">Situación</span><h4>Independencia</h4><p>Ausencia de vínculos que comprometan el juicio, en sus dos dimensiones: psicológica y aparente.</p></div>
-    <div class="tarjeta"><span class="etiqueta">Disposición</span><h4>Objetividad</h4><p>Mentalidad que permite diferenciar los hechos relevantes de los irrelevantes, sin subordinarlos a una conclusión previa.</p></div>
-    <div class="tarjeta"><span class="etiqueta">Conducta</span><h4>Escepticismo</h4><p>Cuestionamiento permanente y alerta ante evidencia contradictoria, sostenido a lo largo de todo el encargo.</p></div>
-  </div>
-
-  <h3>El escepticismo como regla de trabajo</h3>
-  <p>Ramírez Casco et al. (2024) sostienen que, sobre la base de su experiencia y conocimiento, quien audita forensemente debe identificar oportunamente cualquier síntoma de fraude, y que su trabajo «debe ser guiado siempre por el escepticismo profesional» (p. 30).</p>
-  <p>Las mismas autoras vinculan esta exigencia con el marco de las normas internacionales de auditoría: la NIA 570 requiere actuar con escepticismo al revisar las hipótesis de la dirección sobre la empresa en funcionamiento; la NIA 240 reconoce el riesgo inevitable de no detectar algunas incorrecciones materiales por las limitaciones inherentes a toda auditoría; y la NIA 315 atiende a los cambios del entorno de la entidad auditada y a la susceptibilidad de las estimaciones al sesgo de la dirección.</p>
-
-  <div class="nota alerta">
-    <p><b>Riesgo del exceso.</b> La descripción clásica del perfil incluye rasgos como la desconfianza permanente. Conviene precisar el límite: el escepticismo obliga a verificar, no a presumir culpabilidad. La conclusión sobre responsabilidades corresponde al órgano jurisdiccional, no a quien audita.</p>
-  </div>
-
-  <h3>Cuándo se rompe la independencia</h3>
-  <p>La autonomía aparente se pierde cuando existen hechos y contextos tan significativos que un tercero juicioso e informado, con conocimiento de toda la información relevante y de las salvaguardas aplicadas, concluiría razonablemente que la integridad, la objetividad o el escepticismo quedaron comprometidos <button type="button" class="ref" data-ref="ramirez">(Ramírez Casco et al., 2024)</button>.</p>
-  <p>El criterio es exigente por una razón procesal: la contraparte del proceso buscará precisamente esos hechos para restar valor al dictamen. Anticiparlos y documentar las salvaguardas aplicadas forma parte de la preparación del encargo.</p>
-
-  <h3>Lista de verificación · Encuadre ético del encargo</h3>
-  <p>Antes de aceptar un encargo forense, recorra estos puntos. La barra avanza conforme confirma cada uno.</p>
-  <div class="check" id="check-55"></div>
-
-  <h3>Aplicación contable</h3>
-  <p>Un despacho factura <b class="num">₡28.000.000</b> anuales a un grupo empresarial por servicios de contabilidad y es invitado a peritar un presunto fraude interno de ese mismo grupo. Aunque el equipo asignado fuera distinto, la dependencia económica configura una amenaza a la autonomía aparente que ninguna separación interna neutraliza por completo.</p>
-
-  <h3>Caso de estudio</h3>
-  </div>
   <div id="casos-55"></div>
 
   <div class="paso"><button type="button" class="btn claro" data-ir="prev">← 5.4 Casos</button><button type="button" class="btn" data-ir="next">5.6 Preparar resultados →</button></div>
@@ -539,48 +327,6 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
   <p>El informe pericial debe presentarse por escrito, describir claramente los hechos y el objeto del peritaje, distinguir hechos de conjeturas, explicar operaciones técnicas y principios aplicados, y formular conclusiones comprobadas y sustentadas <button type="button" class="ref" data-ref="arias">(Arias González et al., 2019)</button>. La AIC recomienda redacción sencilla, comprensible y detallada, sin tecnicismos innecesarios <button type="button" class="ref" data-ref="aic">(AIC, 2024)</button>.</p>
   <div class="nota oro"><b>Ejemplo de cuantificación.</b> Para sustentar un faltante de inventario, se presenta la ecuación existencias iniciales + entradas - salidas autorizadas - existencia física; se identifican documentos fuente, fechas de corte, ajustes y margen de incertidumbre.</div>
 
-  <div hidden>
-
-  <h3>Qué es un perito</h3>
-  <p>Se considera perito auxiliar de la justicia a la persona experta que, por su conocimiento especializado y su experiencia, puede ilustrar a un juez sobre materias ajenas a lo jurídico, con el propósito de obtener una valoración técnica sobre aspectos puntuales <button type="button" class="ref" data-ref="arias">(Arias González et al., 2019)</button>. La peritación es una actividad desarrollada por encargo judicial, mediante la cual se suministran argumentos técnicos para el convencimiento del juez, que pasan a formar parte del dictamen pericial que sustenta la sentencia.</p>
-
-  <blockquote class="cita">
-    <p>El perito es «auxiliar de la justicia», utilizado como medio de prueba.</p>
-    <footer>Arias González et al. (2019, p. 41)</footer>
-  </blockquote>
-
-  <div class="nota">
-    <p><b>El desplazamiento del destinatario.</b> En un encargo privado el informe se dirige a quien contrata. En sede judicial el destinatario es el tribunal, y el deber de imparcialidad prevalece sobre el interés de la parte que propuso la prueba. Confundir ambos papeles es la falta más frecuente y la más fácil de explotar por la contraparte.</p>
-  </div>
-
-  <h3>Del dictamen a la decisión judicial</h3>
-  <p>Arias González et al. (2019) describen la cadena con precisión: solo el dictamen basado en las pruebas reunidas y ratificadas por el perito sirve de sustento para que el juez asigne responsabilidad sobre los hechos. Si esa cadena se rompe —evidencia mal obtenida, papeles de trabajo insuficientes, dictamen no ratificado— el hecho puede quedar impune aunque el fraude haya existido.</p>
-
-  <h3>Los tres atributos de la evidencia</h3>
-  <p>La AIC (2024) fija el estándar que la evidencia debe reunir antes de incorporarse al informe o al dictamen pericial. Si falta alguno, el elemento no debe incluirse.</p>
-  <div class="tabla-wrap">
-    <table>
-      <thead><tr><th>Atributo</th><th>Qué exige</th><th>Prueba de suficiencia</th></tr></thead>
-      <tbody>
-        <tr><td><b>Suficiencia</b></td><td>Que lo obtenido sea objetivo y convincente, y baste para sustentar hallazgos y conclusiones.</td><td>Un tercero llega a las mismas conclusiones a partir del mismo material.</td></tr>
-        <tr><td><b>Competencia</b></td><td>Validez y confiabilidad del elemento. Puede haber evidencia abundante pero no competente.</td><td>Origen lícito, integridad de la fuente y trazabilidad.</td></tr>
-        <tr><td><b>Relevancia</b></td><td>Que sustente efectivamente una conclusión del dictamen.</td><td>Vínculo demostrable entre el elemento y el hecho investigado.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p style="font-size:13px;color:var(--gris)">Elaboración propia a partir de <button type="button" class="ref" data-ref="aic">AIC (2024)</button>.</p>
-
-  <h3>Testificar como persona experta</h3>
-  <p>Entre las capacidades exigidas al perfil forense figura la de testificar ante la corte. Ello supone conocer las leyes aplicables al esquema de fraude investigado, porque la investigación se dirige precisamente a sostener esa comparecencia <button type="button" class="ref" data-ref="marquez">(Márquez Arcila, 2019)</button>. El expediente no se construye para convencer al cliente: se construye para resistir el contrainterrogatorio.</p>
-  <div class="nota oro">
-    <p><b>Impedimentos.</b> Existen supuestos en que la persona contadora no puede actuar como perito, entre ellos haber declarado antes como testigo en el mismo proceso o haber sido condenada por delito doloso <button type="button" class="ref" data-ref="arias">(Arias González et al., 2019)</button>. Verificar los impedimentos es parte de la aceptación del encargo, no un trámite posterior.</p>
-  </div>
-
-  <h3>Aplicación contable</h3>
-  <p>Un dictamen cuantifica un perjuicio de <b class="num">₡96.400.000</b> a partir de una hoja de cálculo entregada por la parte demandante, sin conciliación contra libros ni comprobantes. El monto puede ser exacto y aun así el elemento carece de competencia: no hay forma de acreditar la integridad de la fuente. Ese dictamen no debería incorporar esa cifra.</p>
-
-  <h3>Caso de estudio</h3>
-  </div>
   <div id="casos-56"></div>
 
   <div class="paso"><button type="button" class="btn claro" data-ir="prev">← 5.5 Presentación</button><button type="button" class="btn" data-ir="next">5.7 Testimonio →</button></div>
@@ -597,41 +343,6 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
   <p>La idoneidad y la imparcialidad también se examinan. Arias González et al. señalan que el perito declara bajo juramento, debe excusarse cuando existe impedimento y presta un servicio desinteresado y justo al proceso <button type="button" class="ref" data-ref="arias">(Arias González et al., 2019)</button>.</p>
   <div class="rejilla r3"><div class="tarjeta"><h4>Antes</h4><p>Repasar informe, anexos, cálculos, cadena de custodia y límites.</p></div><div class="tarjeta"><h4>Durante</h4><p>Escuchar, pedir aclaración, responder con lenguaje llano y reconocer lo que no sabe.</p></div><div class="tarjeta"><h4>Nunca</h4><p>Especular, discutir, memorizar un guion falso o ampliar la conclusión por presión.</p></div></div>
 
-  <div hidden>
-
-  <h3>La ACFE como referente</h3>
-  <p>La Asociación de Examinadores de Fraude Certificados es la mayor organización antifraude del mundo, con cerca de 75.000 miembros en más de 150 países. Fue fundada en 1988 por Joseph T. Wells —agente del FBI y contador— y tiene su sede en Austin, Texas. Agrupa a personas especialistas, investigadoras, auditoras, académicas, abogadas, contadoras y peritas <button type="button" class="ref" data-ref="marquez">(Márquez Arcila, 2019)</button>.</p>
-  <p>Su misión declarada incluye cuatro compromisos que definen bien qué significa profesionalizar este campo: acreditar la competencia mediante examen, sostener altos estándares por medio de educación continua, exigir alineación a un código de ética y conducta, y representar a la profesión ante los sectores empresarial, gubernamental y académico.</p>
-
-  <div class="rejilla r2">
-    <div class="tarjeta"><span class="etiqueta">ACFE</span><h4>Examinadores de fraude</h4><p>Otorga la certificación CFE. Enfoque en prevención, detección, investigación y disuasión del fraude.</p></div>
-    <div class="tarjeta"><span class="etiqueta">ACAMS</span><h4>Antilavado de dinero</h4><p>Especialistas certificados en prevención del lavado de activos.</p></div>
-    <div class="tarjeta"><span class="etiqueta">SCCE</span><h4>Cumplimiento y ética</h4><p>Sociedad de cumplimiento corporativo y ética empresarial.</p></div>
-    <div class="tarjeta"><span class="etiqueta">ASIS</span><h4>Seguridad industrial</h4><p>Sociedad americana para la seguridad industrial.</p></div>
-  </div>
-  <p style="font-size:13px;color:var(--gris)">Asociaciones citadas por <button type="button" class="ref" data-ref="marquez">Márquez Arcila (2019, pp. 172-178)</button>.</p>
-
-  <h3>Rutas de educación continua</h3>
-  <ul class="lista">
-    <li><b>Diplomados en auditoría forense</b>, como el presente programa.</li>
-    <li><b>Cursos de entrevista forense</b>, competencia decisiva para obtener información sin alertar a las personas involucradas.</li>
-    <li><b>Formación técnica en investigación computarizada</b> y técnicas de auditoría asistidas por computadora.</li>
-    <li><b>Convenciones y seminarios internacionales</b>, donde se difunden los esquemas de fraude emergentes.</li>
-    <li><b>Norma ISO 37001</b> de sistemas de gestión antisoborno, aplicable a organizaciones públicas, privadas y no gubernamentales <button type="button" class="ref" data-ref="marquez">(Márquez Arcila, 2019)</button>.</li>
-  </ul>
-
-  <div class="nota">
-    <p><b>Por qué la ISO 37001 aparece aquí.</b> Márquez Arcila (2019) la presenta como aliada en el combate del fraude: crea cultura antisoborno, aplica un sistema de gestión enfocado en la mejora y el monitoreo continuo de los controles existentes, y opera como distintivo competitivo. Para la persona auditora forense es a la vez criterio de evaluación del cliente y área de especialización propia.</p>
-  </div>
-
-  <h3>El argumento de fondo</h3>
-  <p>Las certificaciones no son ornamento curricular. En sede judicial, la idoneidad de quien peritó se discute, y los títulos, certificaciones y educación continua acreditados documentalmente son el material con el que esa idoneidad se sostiene. No por casualidad la métrica de evaluación del perfil asigna la mitad de la ponderación al perfil profesional acreditado <button type="button" class="ref" data-ref="marquez">(Márquez Arcila, 2019)</button>.</p>
-
-  <h3>Aplicación contable</h3>
-  <p>Un despacho que invierte <b class="num">₡1.850.000</b> anuales por profesional en certificación y educación continua está constituyendo, en términos prácticos, la defensa anticipada de sus dictámenes. Es un costo de operación del servicio forense, no un gasto discrecional de capacitación.</p>
-
-  <h3>Caso de estudio</h3>
-  </div>
   <div id="casos-57"></div>
 
   <div class="paso"><button type="button" class="btn claro" data-ir="prev">← 5.6 Resultados</button><button type="button" class="btn" data-ir="next">5.8 Denuncias →</button></div>
@@ -648,42 +359,6 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
   <p>El expediente debe identificar hechos, fechas, personas o funciones relacionadas sin prejuzgar, cuantía y cuentas afectadas, documentos de respaldo, forma de obtención, custodios, medidas urgentes y datos de contacto. Debe preservarse el original de la evidencia y registrarse cada transferencia.</p>
   <div class="nota oro"><b>Aplicación contable.</b> Una denuncia por desvío de pagos adjunta conciliación bancaria, auxiliares de proveedores, facturas, aprobaciones, trazabilidad de cuentas receptoras y cálculo del perjuicio. Se describen inconsistencias; la calificación penal corresponde a la autoridad y a la asesoría jurídica.</div>
 
-  <div hidden>
-
-  <h3>El laboratorio forense y el análisis de datos</h3>
-  <p>Márquez Arcila (2019) sitúa el laboratorio forense como infraestructura tecnológica del ejercicio profesional y describe el análisis de texto como técnica de investigación: la revisión de correos electrónicos, mensajes y contenido de redes puede ayudar a medir presión, oportunidad y racionalización dentro de la organización, es decir, los tres vértices del triángulo del fraude.</p>
-  <div class="tabla-wrap">
-    <table>
-      <thead><tr><th>Tipo de dato</th><th>Descripción</th><th>Ejemplos</th></tr></thead>
-      <tbody>
-        <tr><td><b>Estructurado</b></td><td>Estructura reconocible y predecible; reside en campos fijos, legible por máquina y localizable.</td><td>Sistemas empresariales, números telefónicos, datos económicos.</td></tr>
-        <tr><td><b>No estructurado</b></td><td>No ha sido procesado en un formato estructurado.</td><td>Correos, mensajes instantáneos, videos, imágenes, documentos, páginas web.</td></tr>
-        <tr><td><b>Semiestructurado</b></td><td>Datos estructurados incrustados dentro de datos no estructurados.</td><td>Formularios dentro de documentos libres.</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p style="font-size:13px;color:var(--gris)">Elaboración propia a partir de <button type="button" class="ref" data-ref="marquez">Márquez Arcila (2019)</button>.</p>
-
-  <h3>Herramientas ya incorporadas al ejercicio</h3>
-  <ul class="lista">
-    <li><b>TAAC / CAAT.</b> Probar el funcionamiento de un programa, verificar el cumplimiento de controles, buscar anomalías, realizar muestreo y analizar datos financieros <button type="button" class="ref" data-ref="ramirez">(Ramírez Casco et al., 2024)</button>.</li>
-    <li><b>Auditoría continua.</b> Metodología que permite proveer certeza sobre un asunto mediante informes emitidos en un periodo corto después de ocurridos los hechos <button type="button" class="ref" data-ref="ramirez">(Ramírez Casco et al., 2024)</button>.</li>
-    <li><b>Herramientas de evaluación de seguridad</b> aplicadas a bases de datos, sistemas operativos y redes, que deben ser utilizadas por personal capacitado.</li>
-  </ul>
-
-  <h3>Automatización inteligente: el planteamiento de Naqvi</h3>
-  <p>Naqvi (2020) desarrolla una perspectiva estratégica sobre la automatización de la auditoría y dedica una parte de su obra a la detección de fraude, la contabilidad forense y la valoración, con el propósito de habilitar a las firmas de aseguramiento para ofrecer servicios forenses automatizados. Su argumento central es de diseño organizacional: la automatización no puede planificarse de forma aislada, porque la automatización inteligente no cambia únicamente la tecnología —exige cambiar también la organización que la usa.</p>
-  <p>El autor advierte además contra el enfoque de soluciones puntuales: adquirir herramientas sueltas no basta para construir una práctica forense moderna. Y señala como antecedente que la profesión reconoció la necesidad de responder mejor a las necesidades del cliente en servicios como la valoración, la gestión de riesgos y la contabilidad forense.</p>
-
-  <div class="nota oro">
-    <p><b>Lo que no cambia.</b> La tecnología amplía el volumen de datos examinables y acorta los tiempos, pero no altera los tres atributos que la evidencia debe reunir —suficiencia, competencia y relevancia— ni el deber de imparcialidad ante el tribunal. Un hallazgo producido por un modelo automatizado necesita la misma trazabilidad que uno producido a mano; de lo contrario no es competente.</p>
-  </div>
-
-  <h3>Aplicación contable</h3>
-  <p>Una rutina automatizada señala 1.240 asientos atípicos por <b class="num">₡310.000.000</b> en total. El hallazgo no es todavía evidencia: sin documentar el criterio del modelo, sus parámetros y su tasa de falsos positivos, la contraparte lo descartará por falta de competencia. El juicio profesional se desplaza del conteo manual al diseño y la documentación del criterio.</p>
-
-  <h3>Caso de estudio</h3>
-  </div>
   <div id="casos-58"></div>
 
   <h3>Autoevaluación de la unidad</h3>
@@ -705,13 +380,8 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
       <li id="ref-arias">Arias González, I. P., Colcha Ortiz, R. V., y Robalino, A. P. (2019). <i>Elementos de auditoría forense</i>. Escuela Superior Politécnica de Chimborazo.</li>
       <li id="ref-iesba">International Ethics Standards Board for Accountants. (2018). <i>Código Internacional de Ética para Profesionales de la Contabilidad (incluidas Normas Internacionales de Independencia)</i>. International Federation of Accountants.</li>
       <li id="ref-marquez">Márquez Arcila, R. H. (2019). <i>Auditoría forense</i>. Ecoe Ediciones; Instituto Mexicano de Contadores Públicos.</li>
-      <li id="ref-naqvi">Naqvi, A. S. (2020). <i>Artificial intelligence for audit, forensic accounting, and valuation: A strategic perspective</i>. John Wiley &amp; Sons.</li>
       <li id="ref-ramirez">Ramírez Casco, A. del P., Samaniego Erazo, C. A., Alarcón Parra, G. J., y Ojeda Silva, V. R. (2024). <i>Fundamentos de auditoría forense</i>. CIDEPRO Editorial.</li>
     </ul>
-  </div>
-
-  <div class="nota">
-    <p><b>Instrumentos normativos mencionados en el cuerpo del texto.</b> Normas Internacionales de Auditoría NIA 240, NIA 315 y NIA 570; norma ISO 37001 de sistemas de gestión antisoborno. Conforme a la práctica de la disciplina, los instrumentos normativos se mencionan en el texto y no se incluyen en la lista de referencias.</p>
   </div>
 
   <div class="nota oro">
@@ -723,14 +393,14 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
     <table>
       <thead><tr><th>N.º</th><th>Subtema</th><th>Fuentes principales</th></tr></thead>
       <tbody>
-        <tr><td class="num">5.1</td><td>Ética y responsabilidad social</td><td>Márquez Arcila (2019); AIC (2024); Ramírez Casco et al. (2024)</td></tr>
-        <tr><td class="num">5.2</td><td>Código de ética del auditor forense</td><td>Márquez Arcila (2019); Ramírez Casco et al. (2024)</td></tr>
-        <tr><td class="num">5.3</td><td>Perfil profesional y competencias</td><td>Márquez Arcila (2019); Ramírez Casco et al. (2024)</td></tr>
-        <tr><td class="num">5.4</td><td>Funciones, campo de acción y organización</td><td>AIC (2024); Márquez Arcila (2019); Ramírez Casco et al. (2024)</td></tr>
-        <tr><td class="num">5.5</td><td>Independencia, objetividad y escepticismo</td><td>Ramírez Casco et al. (2024); Márquez Arcila (2019)</td></tr>
-        <tr><td class="num">5.6</td><td>Perito y testigo experto</td><td>Arias González et al. (2019); AIC (2024); Márquez Arcila (2019)</td></tr>
-        <tr><td class="num">5.7</td><td>Desarrollo profesional continuo</td><td>Márquez Arcila (2019)</td></tr>
-        <tr><td class="num">5.8</td><td>Tecnología, datos e inteligencia artificial</td><td>Naqvi (2020); Márquez Arcila (2019); Ramírez Casco et al. (2024)</td></tr>
+        <tr><td class="num">5.1</td><td>Ética y responsabilidad social en la auditoría forense</td><td>IESBA (2018); AIC (2024)</td></tr>
+        <tr><td class="num">5.2</td><td>Código de ética del auditor forense</td><td>IESBA (2018); Márquez Arcila (2019)</td></tr>
+        <tr><td class="num">5.3</td><td>Responsabilidad social del auditor forense</td><td>Ramírez Casco et al. (2024); AIC (2024)</td></tr>
+        <tr><td class="num">5.4</td><td>Análisis de casos de ética y responsabilidad social</td><td>IESBA (2018); Ramírez Casco et al. (2024)</td></tr>
+        <tr><td class="num">5.5</td><td>Presentación de resultados y testimonio</td><td>AIC (2024); Márquez Arcila (2019)</td></tr>
+        <tr><td class="num">5.6</td><td>Preparación y presentación de resultados</td><td>AIC (2024); Arias González et al. (2019)</td></tr>
+        <tr><td class="num">5.7</td><td>El testimonio del auditor forense</td><td>Márquez Arcila (2019); Arias González et al. (2019)</td></tr>
+        <tr><td class="num">5.8</td><td>Presentación de denuncias</td><td>AIC (2024); Arias González et al. (2019)</td></tr>
       </tbody>
     </table>
   </div>
@@ -812,7 +482,7 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
       aceptan la forma con objeto ni el valor "instant". */
   function irArriba(){
     if("scrollBehavior" in document.documentElement.style){
-      try{ window.scrollTo({top:0,behavior:"instant"}); return; }catch(e){}
+      try{ window.scrollTo({top:0,behavior:"auto"}); return; }catch(e){}
     }
     window.scrollTo(0,0);
   }
@@ -918,76 +588,7 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
     });
   });
 
-  /* ============ 4 · Lista de verificación con barra de progreso ============ */
-  var PUNTOS = [
-    {t:"Verifiqué que no existen vínculos económicos actuales ni recientes con ninguna de las partes.", f:"Autonomía psicológica y aparente — Ramírez Casco et al. (2024)"},
-    {t:"Documenté las relaciones previas con las partes y las salvaguardas aplicadas.", f:"Autonomía aparente — Ramírez Casco et al. (2024)"},
-    {t:"Comprobé que no concurre ninguna causal de impedimento para actuar como perito.", f:"Impedimentos — Arias González et al. (2019)"},
-    {t:"El alcance acordado no excluye áreas de riesgo relevantes para la pregunta del encargo.", f:"Integridad de hecho y en apariencia — Márquez Arcila (2019)"},
-    {t:"Acredito formación, certificación y educación continua vigentes para esta materia específica.", f:"Perfil profesional — Márquez Arcila (2019)"},
-    {t:"El equipo cuenta con las competencias técnicas que el tipo de fraude investigado exige.", f:"Perfiles expertos por tipo de caso — Márquez Arcila (2019)"},
-    {t:"Definí cómo se acreditará la suficiencia, competencia y relevancia de cada elemento de evidencia.", f:"Atributos de la evidencia — AIC (2024)"},
-    {t:"Establecí el procedimiento de custodia y trazabilidad de la información recibida de terceros.", f:"Competencia de la evidencia — AIC (2024)"},
-    {t:"Revisé si la organización auditada cuenta con código de ética implementado y vigilado.", f:"Madurez antifraude — Márquez Arcila (2019)"},
-    {t:"Documenté los parámetros y criterios de toda herramienta automatizada que se utilizará.", f:"Automatización con trazabilidad — Naqvi (2020)"},
-    {t:"Identifiqué a quién se dirige el informe y ante quién se rendirá cuentas del dictamen.", f:"Descubre, divulga y atesta — AIC (2024)"},
-    {t:"Planifiqué examinar hipótesis alternativas y no solo la sospecha inicial.", f:"Escepticismo profesional — Ramírez Casco et al. (2024)"}
-  ];
-  (function(){
-    var caja = $("check-55");
-    if(!caja) return;
-    var marcados = 0;                       /* estado en memoria, sin almacenamiento */
-    caja.innerHTML =
-      '<div class="barra-wrap">'+
-      '<div class="barra-txt"><span id="ck-txt">0 de '+PUNTOS.length+' puntos confirmados</span>'+
-      '<span id="ck-pct">0 %</span></div>'+
-      '<div class="barra" role="progressbar" aria-valuemin="0" aria-valuemax="'+PUNTOS.length+'" '+
-      'aria-valuenow="0" aria-label="Avance de la lista de verificación" id="ck-barra">'+
-      '<div class="barra-fill" id="ck-fill"></div></div></div>'+
-      PUNTOS.map(function(p,i){
-        return '<div class="check-item" id="ck-item-'+i+'">'+
-          '<input type="checkbox" id="ck-'+i+'" data-i="'+i+'">'+
-          '<label for="ck-'+i+'">'+p.t+'<span class="fuente">'+p.f+'</span></label></div>';
-      }).join('')+
-      '<div class="veredicto" id="ck-ver" role="status" aria-live="polite"></div>'+
-      '<div style="margin-top:14px"><button type="button" class="btn claro" id="ck-reset">Reiniciar lista</button></div>';
-
-    var txt=$("ck-txt"), pct=$("ck-pct"), fill=$("ck-fill"), barra=$("ck-barra"), ver=$("ck-ver");
-    function refrescar(){
-      var p = Math.round(marcados/PUNTOS.length*100);
-      txt.textContent = marcados+" de "+PUNTOS.length+" puntos confirmados";
-      pct.textContent = p+" %";
-      fill.style.width = p+"%";
-      barra.setAttribute("aria-valuenow", marcados);
-      if(marcados===PUNTOS.length){
-        ver.className="veredicto ver ok";
-        ver.innerHTML="<b>Encuadre completo.</b> Los doce puntos quedaron confirmados. Conserve esta verificación como parte de la documentación de aceptación del encargo.";
-      } else if(marcados>=PUNTOS.length-4 && marcados>0){
-        ver.className="veredicto ver parcial";
-        ver.innerHTML="<b>Faltan "+(PUNTOS.length-marcados)+" puntos.</b> Un encargo forense no debería iniciarse con el encuadre incompleto: los puntos pendientes son los que la contraparte examinará primero.";
-      } else {
-        ver.className="veredicto";
-      }
-    }
-    $$("input",caja).forEach(function(inp){
-      inp.addEventListener("change",function(){
-        var item = $("ck-item-"+inp.getAttribute("data-i"));
-        item.classList.toggle("listo", inp.checked);
-        marcados += inp.checked ? 1 : -1;
-        refrescar();
-      });
-    });
-    $("ck-reset").addEventListener("click",function(){
-      $$("input",caja).forEach(function(inp){
-        inp.checked=false;
-        $("ck-item-"+inp.getAttribute("data-i")).classList.remove("listo");
-      });
-      marcados=0; refrescar();
-    });
-    refrescar();
-  })();
-
-  /* ============ 5 · Cuestionario de autoevaluación ============ */
+  /* ============ 4 · Cuestionario de autoevaluación ============ */
   var PREGUNTAS = [
     {s:"5.1", q:"Al detectar pagos duplicados, ¿cuál es la actuación ética correcta?",
      o:["Calificarlos inmediatamente como fraude","Conciliar fuentes, examinar explicaciones alternativas y comunicar hechos sustentados","Eliminar los asientos para evitar daño reputacional","Informarlos únicamente si superan la materialidad financiera"], a:1,
@@ -1018,7 +619,7 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
     var caja = $("quiz");
     if(!caja) return;
     var letras = ["A","B","C","D"];
-    var indice = 0, aciertos = 0;          /* estado en memoria */
+    var indice = 0, aciertos = 0, falladas = []; /* estado en memoria */
 
     function pintar(enfocarPregunta){
       if(indice >= PREGUNTAS.length){ marcador(); return; }
@@ -1031,8 +632,8 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
              '<span class="mk">'+letras[i]+'</span><span>'+op+'</span></button>';
       });
       h += '</div><div class="retro" id="retro" role="status" aria-live="polite"></div>'+
-           '<div class="paso" style="margin-top:20px;padding-top:16px">'+
-           '<span style="font-size:13px;color:var(--gris)">Elija una opción para ver la retroalimentación.</span>'+
+           '<div class="paso q-paso">'+
+           '<span class="q-ayuda" id="q-ayuda">Elija una opción para ver la retroalimentación.</span>'+
            '<button type="button" class="btn" id="q-sig" disabled>'+
            (indice===PREGUNTAS.length-1 ? "Ver resultado" : "Siguiente pregunta")+' →</button></div>';
       caja.innerHTML = h;
@@ -1054,9 +655,11 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
             retro.className = "retro ver ok";
             retro.innerHTML = '<span class="tag">&#10003; Correcto</span>'+P.e;
           } else {
+            falladas.push(P.s);
             retro.className = "retro ver no";
             retro.innerHTML = '<span class="tag">&#10007; Revise el subtema '+P.s+'</span>'+P.e;
           }
+          $("q-ayuda").textContent = "Respuesta registrada. Revise la explicación y continúe.";
           sig.disabled = false;
           sig.focus();
         });
@@ -1067,22 +670,23 @@ footer.pie{background:var(--azul-900);color:#b9cadb;margin-top:40px;border-top:4
 
     function marcador(){
       var pct = Math.round(aciertos/PREGUNTAS.length*100);
-      var juicio;
+      var juicio, repaso = falladas.join(", ");
       if(pct >= 87) juicio = "Dominio sólido del rol profesional. Puede avanzar a la siguiente unidad.";
-      else if(pct >= 62) juicio = "Buen manejo general. Repase los subtemas de las preguntas falladas antes de continuar.";
-      else juicio = "Conviene volver sobre la unidad completa, en especial los subtemas 5.2, 5.5 y 5.6.";
+      else if(pct >= 62) juicio = "Buen manejo general. Repase los subtemas "+repaso+" antes de continuar.";
+      else juicio = "Conviene volver sobre la unidad y repasar especialmente los subtemas "+repaso+".";
       caja.innerHTML =
-        '<div class="marcador"><div class="aro">'+aciertos+' / '+PREGUNTAS.length+'</div>'+
-        '<p style="font-size:17px;color:var(--tinta-suave);margin-top:10px">'+pct+' % de aciertos</p>'+
-        '<p style="font-size:15px;color:var(--tinta-suave);max-width:52ch;margin:0 auto 18px">'+juicio+'</p>'+
+        '<div class="marcador" role="region" aria-labelledby="q-resultado"><h3 id="q-resultado" tabindex="-1">Resultado de la autoevaluación</h3><div class="aro">'+aciertos+' / '+PREGUNTAS.length+'</div>'+
+        '<p class="porcentaje">'+pct+' % de aciertos</p>'+
+        '<p class="juicio">'+juicio+'</p>'+
         '<button type="button" class="btn" id="q-otra">Repetir la autoevaluación &#8635;</button></div>';
-      $("q-otra").addEventListener("click",function(){ indice=0; aciertos=0; pintar(true); });
+      $("q-otra").addEventListener("click",function(){ indice=0; aciertos=0; falladas=[]; pintar(true); });
+      $("q-resultado").focus();
     }
 
     pintar();
   })();
 
-  /* ============ 6 · Arranque ============ */
+  /* ============ 5 · Arranque ============ */
   mostrar(0,false);
 })();
 </script>
