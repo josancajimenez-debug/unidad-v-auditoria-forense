@@ -40,7 +40,9 @@ proceso de compilación.
 - **Sin almacenamiento.** No se usa `localStorage` ni `sessionStorage`: todo el
   estado vive en variables de JavaScript. El módulo puede servirse a muchas
   personas a la vez sin guardar ningún dato personal.
-- **Responsivo** hasta 380 px de ancho.
+- **Responsivo** para teléfonos, tabletas y escritorio: navegación horizontal
+  desplazable, controles táctiles de al menos 44 px, botones apilados en móvil,
+  tablas desplazables por tacto y teclado, áreas seguras y rejillas adaptativas.
 - **Accesibilidad**: foco de teclado visible, roles `tab`/`tabpanel`,
   `aria-expanded` y `aria-controls` sincronizados en los casos, gestión del foco
   en la autoevaluación, enlace para saltar al contenido y respeto a

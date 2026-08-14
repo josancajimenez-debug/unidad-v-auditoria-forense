@@ -66,3 +66,14 @@ test("incluye controles básicos de seguridad y compatibilidad", () => {
   assert.doesNotMatch(html, /behavior:"instant"/);
   assert.match(html, /behavior:"auto"/);
 });
+
+test("incluye reglas responsive y controles táctiles accesibles", () => {
+  assert.match(html, /@media \(max-width:820px\)/);
+  assert.match(html, /@media \(max-width:600px\)/);
+  assert.match(html, /@media \(max-width:420px\)/);
+  assert.match(html, /min-height:44px/);
+  assert.match(html, /min-height:48px/);
+  assert.match(html, /-webkit-overflow-scrolling:touch/);
+  assert.match(html, /env\(safe-area-inset-left\)/);
+  assert.match(html, /aria-label="Índice de subtemas y fuentes;/);
+});
